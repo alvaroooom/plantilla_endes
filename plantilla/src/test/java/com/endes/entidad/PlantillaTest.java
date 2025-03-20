@@ -21,7 +21,6 @@ class PlantillaTest {
     /**
      * Prueba que verifica que no se puedan contratar empleados con el mismo DNI.
      */
-    @Disabled
     @Test
     @DisplayName("No permite contratar empleados con el mismo DNI")
     void testContratarEmpleado_Duplicado() {
