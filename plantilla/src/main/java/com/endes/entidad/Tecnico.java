@@ -15,6 +15,7 @@ public class Tecnico extends Empleado {
      * @param sueldoBase Sueldo base del técnico.
      * @param categoria  Nivel de categoría (debe ser mayor o igual a 1).
      * @throws IllegalArgumentException Si la categoría es menor que 1.
+     * @author alvmunferdaw1
      */
     public Tecnico(String dni, String nombre, String apellidos, Double sueldoBase, int categoria) {
         super(dni, nombre, apellidos, sueldoBase);
@@ -28,6 +29,7 @@ public class Tecnico extends Empleado {
      * Obtiene la categoría del técnico.
      *
      * @return Categoría del técnico.
+     * @author alvmunferdaw1
      */
     public int getCategoria() {
         return categoria;
@@ -38,6 +40,7 @@ public class Tecnico extends Empleado {
      *
      * @param categoria Nueva categoría (debe ser mayor o igual a 1).
      * @throws IllegalArgumentException Si la categoría es menor que 1.
+     * @author alvmunferdaw1
      */
     public void setCategoria(int categoria) {
         if (categoria < 1) {
@@ -50,6 +53,7 @@ public class Tecnico extends Empleado {
      * Calcula el extra del sueldo basado en la categoría del técnico.
      *
      * @return Incremento del sueldo basado en la categoría (100€ por nivel).
+     * @author alvmunferdaw1
      */
     @Override
     protected Double calcularExtra() {
